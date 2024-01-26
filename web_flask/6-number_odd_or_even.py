@@ -47,7 +47,7 @@ def number_template_task5(n):
 def odd_or_even_task6(n):
     """Checks odd or even"""
     result = "odd"
-    if  n % 2 == 0:
+    if n % 2 == 0:
         result = "even"
     return render_template("6-number_odd_or_even.html", n=n, result=result)
 
