@@ -43,6 +43,15 @@ def number_template_task5(n):
     return render_template("5-number.html", n=n)
 
 
+@app.route("/number_odd_or_even/<int:n>", strict_slashes=False)
+def odd_or_even_task6(n):
+    """Checks odd or even"""
+    result = "odd"
+    if  n % 2 == 0:
+        result = "even"
+    return render_template("6-number_odd_or_even.html", n=n, result=result)
+
+
 if __name__ == "__main__":
     """Set the port and the ip"""
     app.run(port='5000', host='0.0.0.0')
