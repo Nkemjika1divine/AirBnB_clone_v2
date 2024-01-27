@@ -4,6 +4,8 @@ from models.base_model import BaseModel, Base
 from sqlalchemy import Column, String
 from sqlalchemy.orm import relationship, backref
 from os import getenv
+from models.city import City
+from models import storage_type
 
 
 class State(BaseModel, Base):
